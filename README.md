@@ -1,5 +1,5 @@
+[![HRA-Homepage.png](https://i.postimg.cc/rpfRC1N7/HRA-Homepage.png)](https://postimg.cc/v16mG6jv)
 
-![Brand's Logo](https://raw.githubusercontent.com/iamRabia-N/HRA-Fashion-Brand/main/Images/HRA.png?token=GHSAT0AAAAAAB42XCJNF42NTRND2P7OGS3CZEOH5HQ)
 
 # HRA 
 HRA is the clothing brand's website that helps users stay updated with the latest collection.
