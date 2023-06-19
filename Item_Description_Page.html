@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRA | Clothing Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gemunu Libre', sans-serif;
+        background-color: #bcc2cf54;
+
+    }
+
+    #navbar {
+        margin-top: -2rem;
+    }
+
+    /*Navigation bar(navbar) */
+    #navbar ul {
+        justify-content: center;
+        display: flex;
+    }
+
+    /*Navigation bar(navbar) : logo */
+    .logo {
+        height: 90px;
+        display: inline;
+        margin: -20px 8px;
+    }
+
+    /*Navigation bar(navbar) : list */
+    #navbar li {
+        display: inline;
+        position: sticky;
+    }
+
+    /*Navigation bar(navbar) : list */
+    #navbar ul li a {
+        padding: 5px 10px;
+        color: rgb(47, 79, 79);
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    /*Navigation bar(navbar) : list  */
+    #navbar ul li a:hover {
+        color: rgb(161 144 140);
+        transition: 0.3s;
+    }
+
+    #navbar ul li a.active {
+        color: rgb(180, 175, 168);
+        cursor: pointer;
+        background-color: rgb(149, 75, 75);
+        opacity: 0.4;
+        border-radius: 12px;
+    }
+
+    /*..............................................*/
+    .collectionH {
+        margin-bottom: 0rem;
+        font-size: 2.4rem;
+        display: flex;
+        margin-left: 46rem;
+        color: #252936;
+        opacity: 0.8;
+        font-weight: bold;
+        margin-top: 7rem;
+    }
+
+    .img {
+        height: 29em;
+        width: 37em;
+        margin: 1px 70px 0px;
+        display: inline-flex;
+        border-radius: 15px;
+        margin-top: -4rem;
+
+    }
+
+    .secondary {
+        color: rgb(105, 87, 64);
+        font-size: 1.5rem;
+        margin-left: 46rem;
+        margin-top: -16em;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        line-height: 2rem;
+    }
+
+    .btn {
+        margin-left: 46rem;
+        font-size: 1.2rem;
+        background-color: #bec9c929;
+        padding: 6px 12px;
+        border: 2px solid rgb(111 140 155);
+        border-radius: 16px;
+        color: #3b687e;
+        display: flex;
+        font-family: 'Gemunu Libre';
+    }
+
+    .btn:hover {
+        background-color: #a2b4bd;
+        border-radius: 16px;
+        color: #3b687e;
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: 1.2rem;
+        border: 2px solid #8aa0ab;
+    }
+ </style>
+
+ <body>
+
+    <img src="Images/HRA.png" alt="" class="logo">
+    <div id="navbar" class="nav">
+        <div id="navlink">
+            <ul class="navbar_list">
+                <li><a href="#" onclick="location.href='index.html'">Home</a></li>
+                <li><a href="#" onclick="location.href='Collection_Categories.html'" class="active">Collection</a></li>
+                <li><a href="#" onclick="location.href='AboutUs_Page.html'">About Us</a></li>
+                <li><a href="#" onclick="location.href='ContactUs_Page.html'">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="collectionH">Description of Dress Item</h1>
+    <img class="img" src="Images/summerCollect.jpg" alt="Error in loading image">
+    <p class="secondary">
+        Shirt Fabric: Chiffon<br>
+        Color: Red<br>
+        Price: 100$<br>
+        Avaliable colors: Green, Blue, Grey<br>
+        Sizes avaliable: XS, S, L, XL, XXL<br>
+        Catalog: Luxury Pret Eid Collection<br>
+        Detail: Lorem ipsum dolor, sit amet consectetur adipisicing elit..<br>
+    <p>
+    <button class="btn" onclick="location.href='Order_Page.html'">Order Now</button>
+ </body>
+</html>
