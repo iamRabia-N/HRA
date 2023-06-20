@@ -1,0 +1,120 @@
+body {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gemunu Libre';
+    background-color: #d8d9db8e;
+}
+#navbar {
+    margin-top: -2rem;
+}
+
+/*Navigation bar(navbar) */
+#navbar ul {
+    justify-content: center;
+    display: flex;
+}
+
+/*Navigation bar(navbar) : logo */
+.logo {
+    height: 90px;
+    display: inline;
+    margin: -20px 8px;
+}
+
+/*Navigation bar(navbar) : list */
+#navbar li {
+    display: inline;
+    position: sticky;
+}
+
+/*Navigation bar(navbar) : list */
+#navbar ul li a {
+    padding: 5px 15px;
+    color: rgb(47, 79, 79);
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+/*Navigation bar(navbar) : list */
+#navbar ul li a:hover {
+    color: rgb(161 144 140);
+    transition: 0.3s;
+}
+
+#navbar ul li a.active {
+    color: rgb(180, 175, 168);
+    cursor: pointer;
+    background-color: rgb(149, 75, 75);
+    opacity: 0.4;
+    border-radius: 12px;
+}
+/*.........................................................*/
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #626364;
+}
+form {
+    width: 400px;
+    /* background: rgba(255, 255, 255, 0.601); */
+    padding: 15px 40px 40px;
+    border: 1px solid rgba(204, 204, 204, 0.481);
+    margin: 20px auto 0;
+    margin-top: 4rem;
+    border-radius: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+input, select {
+    border: 2px solid #9e9e9e;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: none;
+}
+.row {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+input[type="submit"] {
+    font-size: 1.4rem;
+    font-weight: 100;
+    background: #607D8B;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 13px;
+    font-family: 'Gemunu Libre';
+}
+input[type="submit"]:hover {
+    background: #384b55;
+
+}
+::placeholder {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+}
