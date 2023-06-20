@@ -25,7 +25,6 @@ The goal of this website is to keep the users up-to-date with the items placed i
 - View the items
 - Place the order
 - Contact us
-- Register
 
 ## Key Components
 
@@ -34,7 +33,7 @@ The goal of this website is to keep the users up-to-date with the items placed i
 - Order Item page
 - Contact Us Page
 - About Us page
-- Register page
+
 
 ## Future Scope
 
