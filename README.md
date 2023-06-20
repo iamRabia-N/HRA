@@ -3,13 +3,13 @@
 
 # HRA 
 HRA is the clothing brand's website that helps users stay updated with the latest collection.
-With HRA's website, customers can quickly and easily find items that match their interests.
+With HRA's website, customers can easily find and purchase items that match their interests.
 
 This website provides the frontend of the brand.
 
 ## Goal
 
-The goal of this website is to keep the users up-to-date with the items placed in the physical store.
+The goal of this website is to keep the users up-to-date with the items placed in the physical store and help them place order online.
 
 ## Tech Stack Used At Frontend
 
@@ -25,7 +25,6 @@ The goal of this website is to keep the users up-to-date with the items placed i
 - View the items
 - Place the order
 - Contact us
-- Register
 
 ## Key Components
 
@@ -34,7 +33,7 @@ The goal of this website is to keep the users up-to-date with the items placed i
 - Order Item page
 - Contact Us Page
 - About Us page
-- Register page
+
 
 ## Future Scope
 
