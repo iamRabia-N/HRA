@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HRA | Clothing Brand</title>
+    <link rel="stylesheet" href="CSS/Order_Page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap" rel="stylesheet">
+    <script>
+        // Defining a function to display error message
+        function printError(elemId, hintMsg) {
+            document.getElementById(elemId).innerHTML = hintMsg;
+        }
+
+        // Defining a function to validate form 
+        function validateForm() {
+            // Retrieving the values of form elements 
+            var name = document.contactForm.name.value;
+            var email = document.contactForm.email.value;
+            var mobile = document.contactForm.mobile.value;
+            var card = document.contactForm.card.value;
+            var city = document.contactForm.city.value;
+            var delivery = document.contactForm.delivery.value;
+            var address = document.contactForm.address.value;
+
+            // Defining error variables with a default value
+            var nameErr = emailErr = mobileErr = cityErr = cardErr = deliveryErr = addressErr = true;
+
+            // Validate name
+            if (name == "") {
+                printError("nameErr", "Please enter your name");
+            } else {
+                var regex = /^[a-zA-Z\s]+$/;
+                if (regex.test(name) === false) {
+                    printError("nameErr", "Please enter a valid name");
+                } else {
+                    printError("nameErr", "");
+                    nameErr = false;
+                }
+            }
+
+            // Validate email address
+            if (email == "") {
+                printError("emailErr", "Please enter your email address");
+            } else {
+                // Regular expression for basic email validation
+                var regex = /^\S+@\S+\.\S+$/;
+                if (regex.test(email) === false) {
+                    printError("emailErr", "Please enter a valid email address");
+                } else {
+                    printError("emailErr", "");
+                    emailErr = false;
+                }
+            }
+
+            // Validate mobile number
+            if (mobile == "") {
+                printError("mobileErr", "Please enter your mobile number");
+            } else {
+                var regex = /^[1-9]\d{9}$/;
+                if (regex.test(mobile) === false) {
+                    printError("mobileErr", "Please enter a valid 10 digit mobile number");
+                } else {
+                    printError("mobileErr", "");
+                    mobileErr = false;
+                }
+            }
+
+            // Validate Debit card number
+            if (card == "") {
+                printError("cardErr", "Please enter your debit card number");
+            } else {
+                printError("cardErr", "");
+                cardErr = false;
+            }
+
+            // Validate city
+            if (city == "Select") {
+                printError("cityErr", "Please select your city");
+            } else {
+                printError("cityErr", "");
+                cityErr = false;
+            }
+
+
+            // Validate address
+            if (address == "") {
+                printError("addressErr", "Please enter your full address");
+            } else {
+                printError("addressErr", "");
+                addressErr = false;
+            }
+
+            // Validate urgent delivery
+            if (delivery == "") {
+                printError("deliveryErr", "Please select one option for our clarity");
+            } else {
+                printError("deliveryErr", "");
+                deliveryErr = false;
+            }
+
+            // Prevent the form from being submitted if there are any errors
+            if ((nameErr || emailErr || mobileErr || cardErr || cityErr || addressErr || deliveryErr) == true) {
+                return false;
+            } else {
+                // Creating a string from input data for preview
+                var dataPreview = "You've entered the following details: \n" +
+                    "Full Name: " + name + "\n" +
+                    "Email Address: " + email + "\n" +
+                    "Mobile Number: " + mobile + "\n" +
+                    "Debit card Number: " + card + "\n" +
+                    "City: " + city + "\n" +
+                    "Urgent Delivery: " + delivery + "\n";
+
+                // Display input data in a dialog box before submitting the form
+                alert(dataPreview);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img src="Images/HRA.png" alt="" class="logo">
+    <div id="navbar" class="nav">
+        <div id="navlink">
+            <ul class="navbar_list">
+                <li><a href="#" onclick="location.href='index.html'">Home</a></li>
+                <li><a href="#" onclick="location.href='Collection_Categories.html'" class="active">Collection</a></li>
+                <li><a href="#" onclick="location.href='AboutUs_Page.html'">About Us</a></li>
+                <li><a href="#" onclick="location.href='ContactUs_Page.html'">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <form name="contactForm" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post">
+        <h2>Place Your Order</h2>
+        <div class="row">
+            <input type="text" name="name" placeholder="Full Name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="email" placeholder="Email Address">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="mobile" maxlength="10" placeholder="Mobile Number">
+            <div class="error" id="mobileErr"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="card" placeholder="Debit Card Number">
+            <div class="error" id="cardErr"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="address" placeholder="Full Address">
+            <div class="error" id="addressErr"></div>
+        </div>
+        <div class="row">
+            <select name="city">
+                <option>Select</option>
+                <option>Islamabad</option>
+                <option>Karachi</option>
+                <option>Faisalabad</option>
+                <option>Lahore</option>
+                <option>Other</option>
+            </select>
+            <div class="error" id="cityErr"></div>
+        </div>
+        <div class="row">
+            <label>Urgent Delivery?</label>
+            <div class="form-inline" style="border:2px solid #9e9e9e; border-radius: 10px;">
+                <label><input type="radio" name="delivery" value="yes"> Yes</label>
+                <label><input type="radio" name="delivery" value="no"> No</label>
+            </div>
+            <div class="error" id="deliveryErr"></div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+ </body>
+</html>
