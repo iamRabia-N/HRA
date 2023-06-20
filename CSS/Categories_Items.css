@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gemunu Libre';
+    background-color: #bcc2cf54;
+}
+
+#navbar {
+    margin-top: -2rem;
+}
+
+/*Navigation bar(navbar) */
+#navbar ul {
+    justify-content: center;
+    display: flex;
+}
+
+/*Navigation bar(navbar) : logo */
+.logo {
+    height: 90px;
+    display: inline;
+    margin: -20px 8px;
+}
+
+/*Navigation bar(navbar) : list */
+#navbar li {
+    display: inline;
+    position: sticky;
+}
+
+/*Navigation bar(navbar) : list */
+#navbar ul li a {
+    padding: 5px 15px;
+    color: rgb(47, 79, 79);
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+/*Navigation bar(navbar) : list */
+#navbar ul li a:hover {
+    color: rgb(161 144 140);
+    transition: 0.3s;
+}
+
+#navbar ul li a.active {
+    color: rgb(180, 175, 168);
+    cursor: pointer;
+    background-color: rgb(149, 75, 75);
+    opacity: 0.4;
+    border-radius: 12px;
+}
+
+/*..............................................*/
+.collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 145px;
+}
+
+.collectionH {
+    font-size: 2.4rem;
+    color: #252936;
+    opacity: 0.8;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    margin-top: 7rem;
+}
+
+.collection img {
+    height: 130px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+    border-radius: 5px;
+}
+
+.collection1 {
+    width: 31%;
+    height: 30%;
+    margin: 15px 12px;
+    border-radius: 15px;
+    background: #e7e6e6;
+    box-shadow: -1px -3px 14px #b7b6b9;
+}
+
+.collection1:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: beige;
+    box-shadow: -1px 8px 18px #465f77;
+
+}
+
+/*.......Utility class.......*/
+.primary {
+    font-size: 1.5rem;
+    color: darkslategrey;
+    display: flex;
+    justify-content: center;
+}
+
+/*.......Utility class.......*/
+.secondary {
+    color: rgb(105, 87, 64);
+    font-size: 1.1rem;
+    text-align: center;
+}
