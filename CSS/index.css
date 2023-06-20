@@ -1,0 +1,119 @@
+/*css which applies to whole page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gemunu Libre' !important;
+    background-color: #d8d9db8e;
+}
+
+/*  grid work  */
+#navbar {
+    grid-area: navbar;
+}
+#home-left {
+    grid-area: home-left;
+}
+#home-right {
+    grid-area: home-right;
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+    'home-left home-left home-right home-right';
+}
+/* .................................................... */
+/*Navigation bar(navbar) */
+#navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+/*Navigation bar(navbar) : logo  */
+.logo {
+    height: 90px;
+    display: inline;
+    margin: -20px 8px;
+}
+
+/*Navigation bar(navbar) : list */
+#navbar li {
+    display: inline-flex;
+}
+
+#navbar ul li a {
+    padding: 5px 10px;
+    color: rgb(47, 79, 79);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a:hover {
+    color: rgb(161 144 140);
+    transition: 0.3s;
+}
+
+#navbar ul li a.active {
+    color: rgb(180, 175, 168);
+    cursor: pointer;
+    background-color: rgb(149, 75, 75);
+    opacity: 0.4;
+    border-radius: 12px;
+}
+
+/*.....................Home page CSS.....................*/
+.home_btn {
+    font-size: 1.2rem;
+    background-color: #bec9c929;
+    padding: 6px 12px;
+    border: 2px solid rgb(111 140 155);
+    border-radius: 16px;
+    color: #3b687e;
+    margin: auto;
+    display: flex;
+    font-family: 'Gemunu Libre';
+}
+
+.home_btn:hover {
+    background-color: #a2b4bd;
+    border-radius: 16px;
+    color: #3b687e;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    border: 2px solid #8aa0ab;
+}
+
+.head {
+    display: flex;
+    font-size: 2.4rem;
+    text-align: center;
+    padding-top: 19%;
+    justify-content: center;
+}
+
+.centralpara {
+    display: block;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 17%;
+    margin-top: 1%;
+}
+
+.centralpara2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#home-pic img {
+    width: 53vw;
+    height: 97vh;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: rgb(245, 245, 245);
+}
