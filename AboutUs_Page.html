@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRA | Clothing Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /*css which applies to whole page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gemunu Libre', sans-serif;
+            background-color: #bcc2cf54;
+        }
+
+        #navbar {
+            margin-top: -2rem;
+        }
+
+        /*Navigation bar(navbar) */
+        #navbar ul {
+            justify-content: center;
+            display: flex;
+        }
+
+        /*Navigation bar(navbar) : logo */
+        .logo {
+            height: 90px;
+            display: inline;
+            margin: -20px 8px;
+        }
+
+        /*Navigation bar(navbar) : list */
+        #navbar li {
+            display: inline;
+            position: sticky;
+        }
+
+        /*Navigation bar(navbar) : list */
+        #navbar ul li a {
+            padding: 5px 10px;
+            color: rgb(47, 79, 79);
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        /*Navigation bar(navbar) : list  */
+        #navbar ul li a:hover {
+            color: rgb(161 144 140);
+            transition: 0.3s;
+        }
+
+        #navbar ul li a.active {
+            color: rgb(180, 175, 168);
+            cursor: pointer;
+            background-color: rgb(149, 75, 75);
+            opacity: 0.4;
+            border-radius: 12px;
+        }
+
+        /*............About Section.................*/
+        .aboutUsH {
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: 2.4rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            margin-bottom: -409px;
+            color: #252936;
+            opacity: 0.89;
+            font-weight: bold;
+        }
+
+        .aboutUsP {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgb(105, 87, 64);
+        }
+
+        .links {
+            font-size: 1.2rem;
+            color: rgb(105, 87, 64);
+            margin: 12px 10px;
+            text-align: center;
+        }
+
+        .aboutUs div {
+            margin: auto;
+            width: 50%;
+            padding: 426px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Images/HRA.png" alt="" class="logo">
+    <div id="navbar" class="nav">
+        <div id="navlink">
+            <ul class="navbar_list">
+                <li><a href="#" onclick="location.href='index.html'">Home</a></li>
+                <li><a href="#" onclick="location.href='Collection_Categories.html'">Collection</a></li>
+                <li><a href="#" onclick="location.href='AboutUs_Page.html'" class="active">About Us</a></li>
+                <li><a href="#" onclick="location.href='ContactUs_Page.html'">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="aboutUsH">ABOUT US</div>
+    <section class="aboutUs">
+        <div>
+            <p class="aboutUsP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus cum necessitatibus
+                cumque nam tenetur! Ullam minima dolore earum. Nam magnam accusantium optio quaerat impedit nulla, aut
+                sequi molestiae eligendi at ex quidem.<br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus expedita amet, eum minus quibusdam
+                asperiores ipsum?</p>
+            <p class="links">www.instagram/hra.com</p>
+            <p class="links">www.facebook/hra.com</p>
+            <p class="links">www.tweeter/hra.com</p>
+            </p>
+    </section>
+</body>
+
+</html>
