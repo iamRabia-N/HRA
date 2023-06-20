@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRA | Clothing Brand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gemunu Libre', sans-serif;
+            background-color: #bcc2cf54;
+        }
+
+        #navbar {
+            margin-top: -2rem;
+        }
+
+        /*Navigation bar(navbar) */
+        #navbar ul {
+            justify-content: center;
+            display: flex;
+        }
+
+        /*Navigation bar(navbar) : logo */
+        .logo {
+            height: 90px;
+            display: inline;
+            margin: -20px 8px;
+        }
+
+        /*Navigation bar(navbar) : list */
+        #navbar li {
+            display: inline;
+            position: sticky;
+        }
+
+        /*Navigation bar(navbar) : list */
+        #navbar ul li a {
+            padding: 5px 10px;
+            color: rgb(47, 79, 79);
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        /*Navigation bar(navbar) : list  */
+        #navbar ul li a:hover {
+            color: rgb(161 144 140);
+            transition: 0.3s;
+        }
+
+        #navbar ul li a.active {
+            color: rgb(180, 175, 168);
+            cursor: pointer;
+            background-color: rgb(149, 75, 75);
+            opacity: 0.4;
+            border-radius: 12px;
+        }
+
+        /*.................................*/
+        .contactUsH {
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: 2.4rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 85px;
+            margin-bottom: 18px;
+
+            color: #252936;
+            opacity: 0.89;
+            font-weight: bold;
+        }
+
+        form {
+            display: block;
+        }
+
+        .form {
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: 1.3rem;
+            color: rgb(105, 87, 64);
+            text-align: center;
+        }
+
+        #name {
+            border: 2px solid #9e9e9e;
+            margin-top: 6px;
+            height: 20px;
+            border-radius: 5px;
+            height: 30px;
+            width: 410px;
+            margin: auto;
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+
+        #phoneNo {
+            border: 2px solid #9e9e9e;
+            border-radius: 5px;
+            margin: auto;
+            display: flex;
+            height: 30px;
+            width: 410px;
+            margin-bottom: 0.5rem;
+        }
+
+        #email {
+            border: 2px solid #9e9e9e;
+            border-radius: 5px;
+            margin: auto;
+            display: flex;
+            height: 30px;
+            width: 410px;
+            margin-bottom: 0.5rem;
+        }
+
+        #address {
+            border: 2px solid #9e9e9e;
+            border-radius: 5px;
+            height: 30px;
+            width: 410px;
+            margin: auto;
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+
+        #message {
+            border: 2px solid #9e9e9e;
+            height: 110px;
+            border-radius: 5px;
+            width: 410px;
+            margin: auto;
+            display: flex;
+        }
+
+        .nameErr,
+        .mobileErr,
+        .emailErr,
+        .addressErr,
+        .messageErr {
+            margin-bottom: 0.5rem;
+        }
+
+        ::placeholder {
+            font-family: 'Gemunu Libre', sans-serif;
+            font-size: 1rem;
+            padding: 5px;
+        }
+
+        input {
+            margin-left: 490px;
+        }
+
+        #submit {
+            background: #c9cbcc45;
+            font-size: 1.3rem;
+            padding: 7px 15px;
+            border: 2px solid rgb(111 140 155);
+            border-radius: 16px;
+            color: #3b687e;
+            margin: auto;
+            display: flex;
+            font-family: 'Gemunu Libre';
+            margin-bottom: 7.3rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #a2b4bd;
+            border-radius: 16px;
+            color: #3b687e;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 2px solid #8aa0ab;
+        }
+
+        /*............................footer...................*/
+        .footer {
+            background-color: #403f3f;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #f5e8cf;
+            padding: 3px;
+            vertical-align: bottom;
+            position: fixed;
+            width: 100%;
+        }
+    </style>
+ </head>
+
+ <body>
+    <img src="Images/HRA.png" alt="" class="logo">
+    <div id="navbar" class="nav">
+        <div id="navlink">
+            <ul class="navbar_list">
+                <li><a href="#" onclick="location.href='index.html'">Home</a></li>
+                <li><a href="#" onclick="location.href='Collection_Categories.html'">Collection</a></li>
+                <li><a href="#" onclick="location.href='AboutUs_Page.html'">About Us</a></li>
+                <li><a href="#" onclick="location.href='ContactUs_Page.html'" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form name="contactform" method="post">
+        <div class="contactUsH">CONTACT US</div>
+
+        <div class="row">
+            <input type="text" id="name" name="name" placeholder="Enter your Full Name">
+        </div>
+        <div class="row">
+            <input type="text" name="mobile" id="phoneNo" placeholder="Enter your Phone Number">
+        </div>
+        <div class="row">
+            <input type="text" name="email" id="email" placeholder="Enter your Email ID">
+        </div>
+        <div class="row">
+            <input type="text" name="address" id="address" placeholder="Enter your Address">
+        </div>
+        <div class="row">
+            <input type="text" name="message" id="message">
+            <div class="messageErr" aria-placeholder="Message for Us"></div>
+        </div>
+        <div class="row">
+            <input type="submit" id="submit" value="submit" name="Submit" onclick="location.href='index.html'">
+        </div>
+    </form>
+    <div class="footer">
+        <footer>
+            copyright &copy; www.hra.com. All rights reserved!
+        </footer>
+    </div>
+ </body>
+</html>
