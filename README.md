@@ -3,7 +3,8 @@
 
 # HRA 
 HRA is the clothing brand's website that helps users stay updated with the latest collection.
-With HRA's website, customers can easily find and purchase items that match their interests. <br>
+With HRA's website, customers can easily find and purchase items that match their interests. 
+
 This website provides the frontend of the brand.
 
 ## Goal
